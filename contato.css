@@ -16,26 +16,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body {
-    min-height: 100vh;
+html, body {
+    height: 100%;
     background-color: var(--cor3);
+    display: flex;
+    flex-direction: column;
 }
-header {
-    background-image: url(imagens/9.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    padding: 10px;
-    color: black;
-    text-align: center;
-}
-h1 {
-    background-color: var(--cor1);
-    font-variant: small-caps;
-    font-family: var(--fonte2);
-    padding: 10px;
-    font-size: 5vh;
-}
+
 nav {
     background-color: var(--cor1);
     padding: 10px;
@@ -57,6 +44,7 @@ nav a:hover {
     color: black;
 }
 main {
+    flex: 1 0 auto;
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -68,22 +56,7 @@ main {
     border-bottom-right-radius: 10px;
     font-family: var(--fonte1);
 }
-main h2 {
-    font-size: 1.3em;
-    font-weight: bold;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
-    text-indent: 30px;
-}
-main p {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1em;
-    line-height: 2em;
-}
-article {
-    padding: 10px;
-}
+
 a {
     color: black;
     font-weight: bolder;
@@ -91,25 +64,24 @@ a {
 }
 a:hover {
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.663);
 }
-img {
-    max-width: 300px;
-    display: inline-block;
-    margin: auto;
-}
+
 aside {
     background-color: var(--cor2);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.451);
 }
-aside > p {
+aside p {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 0px;
     font-size: 1em;
     line-height: 2em;
+}
+.voltar {
+    margin-top: 15px;
 }
 footer {
     width: 100%;
